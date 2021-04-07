@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Java11_Servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- Register an AboutServlet -->
+  <servlet>
+  	<servlet-name>aboutServlet</servlet-name>
+  	<servlet-class>cybersoft.java11.servlet.AboutServlet</servlet-class>
+  </servlet>
+  <!-- Register mapping -->
+  <servlet-mapping>
+  	<servlet-name>aboutServlet</servlet-name>
+  	<url-pattern>/about</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Register a HomePage -->
+  <servlet>
+  	<servlet-name>homePage</servlet-name>
+  	<servlet-class>cybersoft.java11.servlet.HomePage</servlet-class>
+  </servlet>
+  
+  <!-- Mapping -->
+  <servlet-mapping>
+  	<servlet-name>homePage</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <!-- login servlet -->
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>cybersoft.java11.servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Register servlet -->
+  <servlet>
+  	<servlet-name>registerServlet</servlet-name>
+  	<servlet-class>cybersoft.java11.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>registerServlet</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
